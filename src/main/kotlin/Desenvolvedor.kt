@@ -3,12 +3,17 @@ class Desenvolvedor (
     nome: String,
     salario: Double,
     idade: Int,
-    var senha: String
-): Funcionario(id = id, nome = nome, salario = salario, idade = idade) {
+    senha: String
+): FuncionarioAdmin(
+    id = id,
+    nome = nome,
+    salario = salario,
+    idade = idade,
+    senha = senha) {
 
     override fun bonificacao(): Double = salario * 0.5 + salario
 
-    fun autenticacao(senha: String): Boolean {
+    override fun autenticacao(senha: String): Boolean {
         if (this.senha == senha) {
             return true
         }

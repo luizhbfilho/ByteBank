@@ -1,5 +1,9 @@
 class SistemaInterno {
-    fun entra(desenvolvedor: Funcionario){
-        desenvolvedor.autenticacao()
+    fun entra(admin: FuncionarioAdmin, senha: String){
+        if(admin.autenticacao(senha)){
+            println("Bem vindo!")
+        } else {
+            println("Senha incorreta!")
+        }
     }
 }
