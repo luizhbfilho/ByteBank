@@ -1,16 +1,15 @@
-import interfaces.Autenticavel
-
-abstract class FuncionarioAdmin(
+class Estagiario(
     id: Int,
     nome: String,
     salario: Double,
-    idade: Int,
-    val senha: String
+    idade: Int
 ): Funcionario(
     id = id,
     nome = nome,
     salario = salario,
     idade = idade
-), Autenticavel {
-
+) {
+    override fun bonificacao(): Double {
+        TODO("Not yet implemented")
+    }
 }

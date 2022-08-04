@@ -1,5 +1,7 @@
+import interfaces.Autenticavel
+
 class SistemaInterno {
-    fun entra(admin: FuncionarioAdmin, senha: String){
+    fun entra(admin: Autenticavel, senha: String){
         if(admin.autenticacao(senha)){
             println("Bem vindo!")
         } else {
