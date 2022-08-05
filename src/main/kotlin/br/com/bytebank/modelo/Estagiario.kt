@@ -1,3 +1,5 @@
+package br.com.bytebank.modelo
+
 class Estagiario(
     id: Int,
     nome: String,

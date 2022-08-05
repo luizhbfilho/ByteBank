@@ -1,3 +1,5 @@
+package br.com.bytebank.modelo
+
 abstract class Funcionario(
     val id: Int,
     val nome: String,

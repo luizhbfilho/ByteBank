@@ -1,3 +1,5 @@
+package br.com.bytebank.modelo
+
 abstract class Conta(
     var titular: String,
     val numero: Int
@@ -11,7 +13,7 @@ abstract class Conta(
 
     abstract fun transfere(valor: Double)
 
-//    fun obterSaldo(conta: Conta) {
+//    fun obterSaldo(conta: modelo.Conta) {
 //        return println("Saldo da conta: R$${conta.saldo}")
 //    }
 //

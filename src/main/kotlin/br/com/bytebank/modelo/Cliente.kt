@@ -1,10 +1,10 @@
-import interfaces.Autenticavel
+package br.com.bytebank.modelo
 
 class Cliente(
     val id: Int,
     val nome: String,
     val cpf: Int,
-    var senha: String): Autenticavel
+    val senha: String): Autenticavel
 {
 
     override fun autenticacao(senha: String): Boolean {

@@ -1,6 +1,6 @@
-package testes
+package br.com.bytebank.testes
 
-import ContaCorrente
+import br.com.bytebank.modelo.ContaCorrente
 
 fun testaComportamentosConta(){
     var conta1 = ContaCorrente(

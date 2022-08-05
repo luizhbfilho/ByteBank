@@ -1,4 +1,4 @@
-import testes.testaComportamentosConta
+import br.com.bytebank.modelo.*
 
 fun testaAutenticacao() {
     val desenvolvedor = Desenvolvedor(

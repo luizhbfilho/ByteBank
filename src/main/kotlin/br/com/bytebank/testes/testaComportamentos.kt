@@ -1,3 +1,5 @@
+import br.com.bytebank.modelo.*
+
 fun testaComportamentos() {
     var desenvolvedor1 = Desenvolvedor(
         nome = "Luiz Filho",
@@ -15,14 +17,14 @@ fun testaComportamentos() {
     )
 
 
-    println("Desenvolvedor 1: ${desenvolvedor1.nome}")
+    println("modelo.Desenvolvedor 1: ${desenvolvedor1.nome}")
     println("Bonificacao do funcionario ${desenvolvedor1.nome}: ${desenvolvedor1.bonificacao()}")
     if (desenvolvedor1.autenticacao("Zuilinho@123")){
         println("Autenticado com sucesso!")
     } else {
         println("Senha incorreta!")
     }
-    println("Desenvolvedor 1: ${funcionario1.nome}")
+    println("modelo.Desenvolvedor 1: ${funcionario1.nome}")
     println("Bonificacao do funcionario ${funcionario1.nome}: ${funcionario1.bonificacao()}")
 
     val calculadora = CalculadoraBonificacao()

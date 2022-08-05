@@ -1,4 +1,4 @@
-import interfaces.Autenticavel
+package br.com.bytebank.modelo
 
 class SistemaInterno {
     fun entra(admin: Autenticavel, senha: String){

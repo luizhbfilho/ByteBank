@@ -1,3 +1,5 @@
+package br.com.bytebank.modelo
+
 class ContaPoupança(
     titular: String,
     numero: Int

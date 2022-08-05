@@ -1,3 +1,5 @@
+package br.com.bytebank.modelo
+
 class Desenvolvedor (
     id: Int,
     nome: String,
@@ -10,15 +12,11 @@ class Desenvolvedor (
     salario = salario,
     idade = idade,
     senha = senha) {
+    override fun autenticacao(senha: String): Boolean {
+        return super<FuncionarioAdmin>.autenticacao(senha)
+    }
 
     override fun bonificacao(): Double = salario * 0.5 + salario
-
-    override fun autenticacao(senha: String): Boolean {
-        if (this.senha == senha) {
-            return true
-        }
-        return false
-    }
 }
 
 
