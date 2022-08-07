@@ -1,11 +1,21 @@
 package br.com.bytebank.modelo
 
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     val numero: Int
 ) {
     var saldo = 0.0
         protected set
+
+    companion object Contador {
+        var totalContas = 0
+            private set
+    }
+
+    init {
+        println("Criando conta.")
+        totalContas++
+    }
 
     abstract fun depositar(valor: Double)
 

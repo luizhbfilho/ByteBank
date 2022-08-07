@@ -1,11 +1,11 @@
 package br.com.bytebank.modelo
 
 class ContaPoupança(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : Conta(
-    titular,
-    numero) {
+    titular = titular,
+    numero = numero) {
     override fun depositar(valor: Double) {
         TODO("Not yet implemented")
     }

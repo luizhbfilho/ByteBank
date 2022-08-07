@@ -4,7 +4,8 @@ class Cliente(
     val id: Int,
     val nome: String,
     val cpf: Int,
-    val senha: String): Autenticavel
+    val senha: String,
+    var endereco: Endereco): Autenticavel
 {
 
     override fun autenticacao(senha: String): Boolean {
